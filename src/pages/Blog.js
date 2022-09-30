@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { blogData } from "../Data";
 function Blog(props) {
   const { title } = useParams();
@@ -13,6 +13,7 @@ function Blog(props) {
     <div>
       <h1>{title} Pages</h1>
       <p>{body}</p>
+      <Link to="/blogs">back</Link>
     </div>
   );
 }
