@@ -8,6 +8,7 @@ import Blogs from "./pages/Blogs";
 import Error from "./pages/Error";
 import Navbar from "./components/Navbar";
 import Blog from "./pages/Blog";
+import User from "./pages/User";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:title" element={<Blog />} />
-        <Route path="/*" element={<Error />} />
+        {/* <Route path="/*" element={<Error />} /> */}
+        <Route path="/user/:userid" element={<User />} />
       </Routes>
     </BrowserRouter>
   );
