@@ -20,7 +20,9 @@ function Blogs(props) {
             <h1>{title}</h1>
             <p>{truncateBlog(body, 100)}</p>
             <button className="nav-link">
-              <Link to={title}> Learn More</Link>
+              <Link to={title} state={{ id, title, body }}>
+                Learn More
+              </Link>
             </button>
           </article>
         );
