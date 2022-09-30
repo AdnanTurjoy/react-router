@@ -12,6 +12,9 @@ function Navbar(props) {
       <NavLink to="/contact" className="nav-link">
         Contact
       </NavLink>
+      <NavLink to="/protected-page" className="nav-link">
+        Protected Page
+      </NavLink>
     </nav>
   );
 }
